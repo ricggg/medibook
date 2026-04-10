@@ -47,3 +47,4 @@ export default function Card({
     </motion.div>
   );
 }
+
