@@ -4766,7 +4766,7 @@ export default function DoctorDashboard() {
         setAuditLog((prev) => {
           const already = prev.some((e) => e.action === "Session started" && e.details.includes(doc.name));
           if (already) return prev;
-          return [{ id: uid("audit"), atISO: new Date().toISOString(), actor: "System", action: "Session started", details: `Doctor portal access • ${doc.name}`, severity: "info" }, ...prev].slice(0, 220);
+          return [{ id: uid("audit"), atISO: new Date().toISOString(), actor: "System", action: "Session started", details: `Doctor portal access • ${doc.name}`, severity: "info" as const }, ...prev].slice(0, 220);
         });
       } catch {
         addToast("Failed to load dashboard.", "error");
