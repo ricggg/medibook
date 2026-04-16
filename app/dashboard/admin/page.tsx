@@ -4061,7 +4061,7 @@ export default function AdminDashboard() {
     },
     analytics: {
       title:    'Clinic Analytics',
-      subtitle: 'Performance data Jan – Jun 2025',
+      subtitle: 'Performance data Jan – Jun 2026',
     },
     billing: {
       title:    'Billing & Invoices',
